@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array practice</title>
+    </head>
+    <body>
+        <h1>Array Methods practice</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+
+        <p id="here"></p>
+        <p id="here1"></p>
+        <p id="here2"></p>
+        <p id="here3"></p>
+
+       <script>
+        const fruits = [" Banana", " Orange", " Pinapple", " Grapes "];
+        document.getElementById("demo").innerHTML = fruits;
+        fruits.push(" Kiwi");                                              /*push*/
+        document.getElementById("demo1").innerHTML = fruits;
+
+        const names = ["Harleen", "Shivkiran", "pawan", "karan"];
+        document.getElementById("demo2").innerHTML = names;
+        names.push("Ranjit Singh");
+        document.getElementById("demo3").innerHTML = names;
+
+        const fruit = [" Banana ", "Orange ", "Pinapple ", "Grapes "];
+        document.getElementById("demo4").innerHTML = fruit;
+        fruit.pop();                                                        /*pop*/
+        document.getElementById("demo5").innerHTML = fruit;
+
+        //Shifting the Element
+        const num = [1, 2, 3, 4, 5, 6];
+        document.getElementById("here").innerHTML = num;
+        num.shift();
+        document.getElementById("here1").innerHTML = num;
+
+        const numb = [1, 2, 3, 4, 5, 6];
+        document.getElementById("here2").innerHTML = numb;
+        numb.unshift("8");
+        document.getElementById("here3").innerHTML = numb;
+       </script>
+    </body>
+</html>
